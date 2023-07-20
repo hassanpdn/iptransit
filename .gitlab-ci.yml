@@ -1,0 +1,16 @@
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - yarn install
+    - export VITE_APP_API_URL=$VITE_APP_API_URL
+    - yarn run build
+
+deploy:
+  stage: deploy
+  script:
+    - cp -r dist/* /var/www/html
