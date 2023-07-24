@@ -77,7 +77,7 @@ export const useAuthStore = defineStore({
     },
     async logout() {
       try {
-        await logout()
+        // await logout()
 
         this.isAuthenticated = false
         this.token = null

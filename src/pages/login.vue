@@ -28,34 +28,24 @@
         <VCardText>
           <VForm ref="refVForm" @submit.prevent="handleSubmit">
             <VRow>
-              <!-- email -->
+              <!-- username -->
               <VCol cols="12">
-                <VTextField hide-details="auto" variant="outlined" density="comfortable"  v-model="form.email" label="Email" type="email" :rules="[requiredValidator, emailValidator]"
-                  :error-messages="errors.email" />
+                <VTextField hide-details="auto" variant="outlined" density="comfortable"  v-model="form.username" label="Username" :rules="[requiredValidator]"
+                  :error-messages="errors.username" />
               </VCol>
 
               <!-- password -->
               <VCol cols="12">
-                <VTextField hide-details="auto" variant="outlined" density="comfortable"  v-model="form.password" label="Password"
+                <!-- <VTextField hide-details="auto" variant="outlined" density="comfortable"  v-model="form.password" label="Password"
                   :type="isPasswordVisible ? 'text' : 'password'"
                   :append-inner-icon="isPasswordVisible ? 'tabler-eye-off' : 'tabler-eye'"
                   :rules="[requiredValidator, passwordValidator, minLengthValidator(form.password, 8), maxLengthValidator(form.password, 16)]" :error-messages="errors.password"
+                  @click:append-inner="isPasswordVisible = !isPasswordVisible" /> -->
+                <VTextField hide-details="auto" variant="outlined" density="comfortable"  v-model="form.password" label="Password"
+                  :type="isPasswordVisible ? 'text' : 'password'"
+                  :append-inner-icon="isPasswordVisible ? 'tabler-eye-off' : 'tabler-eye'"
+                  :rules="[requiredValidator, passwordValidator]" :error-messages="errors.password"
                   @click:append-inner="isPasswordVisible = !isPasswordVisible" />
-
-                <!-- remember me checkbox -->
-                <!-- <div class="d-flex align-center justify-space-between flex-wrap mt-2 mb-4">
-                  <VCheckbox
-                    v-model="form.remember"
-                    label="Remember me"
-                  />
-
-                  <RouterLink
-                    class="text-primary ms-2 mb-1"
-                    :to="{ name: 'forgot-password' }"
-                  >
-                    Forgot Password?
-                  </RouterLink>
-                </div> -->
 
                 <!-- login button -->
                 <VBtn color="primary" class="mt-6" block type="submit" @click="handleSubmit">
@@ -63,12 +53,9 @@
                 </VBtn>
               </VCol>
 
-              <!-- create account -->
+              <!-- Create account -->
               <VCol cols="12" class="text-center">
                 <span>🎉 One click to your personalized experience</span>
-                <!-- <RouterLink class="text-primary ms-2" :to="{ name: 'register' }">
-                  Create an account
-                </RouterLink> -->
               </VCol>
             </VRow>
           </VForm>
@@ -86,7 +73,6 @@ import { useAuthStore } from '@/store/useAuthStore'
 import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
 import { themeConfig } from '@themeConfig'
 import {
-emailValidator,
 maxLengthValidator,
 minLengthValidator,
 passwordValidator,
@@ -98,15 +84,13 @@ const refVForm = ref()
 const isPasswordVisible = ref(false)
 
 const errors = ref({
-  email: undefined,
+  username: undefined,
   password: undefined,
 })
 
 const form = ref({
-  email: 'pudineh@xicomm.com',
-  password: 'Aa112233##',
-  // email: '',
-  // password: '',
+  username: 'contoso',
+  password: 'contoso',
   remember: false,
 })
 
@@ -122,7 +106,7 @@ const handleSubmit = e => {
 }
 
 async function login() {
-  await authStore.login(form.value.email, form.value.password)
+  await authStore.login(form.value.username, form.value.password)
 }
 </script>
 

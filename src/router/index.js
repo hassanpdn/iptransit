@@ -18,7 +18,7 @@ router.beforeEach((to, from, next) => {
     
     snackbarStore.resetMessages()
   }
-  // if (to.meta.requiresAuth && !authStore.isLoggedIn) next({ name: 'login' })
+  if (to.meta.requiresAuth && !authStore.isLoggedIn) next({ name: 'login' })
   else if (!to.meta.requiresAuth && authStore.isLoggedIn) next({ name: 'index' })
   else next()
 })

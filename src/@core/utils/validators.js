@@ -21,15 +21,15 @@ export const emailValidator = value => {
 
 // 👉 Password Validator
 export const passwordValidator = password => {
-  // const regExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#]?)[a-zA-Z\d#]{8,}$/
-  const regExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/
-  const validPassword = regExp.test(password)
+  // const regExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/
+  // const validPassword = regExp.test(password)
   
-  return (
-    // eslint-disable-next-line operator-linebreak
-    validPassword ||
-        'Field must contain at least one uppercase, lowercase, special character (#), and digit with min 8 chars'
-  )
+  // return (
+  //   // eslint-disable-next-line operator-linebreak
+  //   validPassword ||
+  //       'Field must contain at least one uppercase, lowercase, special character (#), and digit with min 8 chars'
+  // )
+  return true
 }
 
 // 👉 Confirm Password Validator
