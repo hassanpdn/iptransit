@@ -511,11 +511,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.2.0.tgz#2cbcf822bf3764c9658c4d2e568bd0c0cb748016"
   integrity sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw==
 
-"@dash14/svg-pan-zoom@^3.6.9":
-  version "3.6.9"
-  resolved "https://registry.yarnpkg.com/@dash14/svg-pan-zoom/-/svg-pan-zoom-3.6.9.tgz#e73b5a71f73ce00f20ab3484260f45e6c6512ed7"
-  integrity sha512-6u+KTQec+9+3bRdk2mReix8AGsp2mB40cw0iYfQQzo22QBkeCNpXl2amnfwQzK7xB9oH/62Wvf2z7l6l2w+csA==
-
 "@esbuild/android-arm@0.15.18":
   version "0.15.18"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm/-/android-arm-0.15.18.tgz#266d40b8fdcf87962df8af05b76219bc786b4f80"
@@ -569,91 +564,6 @@
   integrity sha512-maYJRv+sAXTy4K9mzdv0JPyNW5YPVHrqtY90tEdI6XNpuLOP26Ci2pfwPsKBA/Wh4Z3FX5sUrtUFTdMYj9v+ug==
   dependencies:
     "@floating-ui/core" "^1.0.1"
-
-"@formkit/core@0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/core/-/core-0.17.4.tgz#d2c302bd5dc96ef894d9d20749ca6391d014c7e6"
-  integrity sha512-KH1Xj2cuKyRjLjk/bssxZ2uzXw3SiYpvYFud205zrWaslkButCmZbMI1BTUZ1Eywhsyiqdq1/Z0J9T8SNcAv8Q==
-  dependencies:
-    "@formkit/utils" "0.17.4"
-
-"@formkit/dev@0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/dev/-/dev-0.17.4.tgz#bec65556f7011caa57253484b4351caaba169f49"
-  integrity sha512-uqpDOYN/s1hIWyk32HgwKEfczj94zFyePdx5RGJFMINnnh+cXI2ltZfkSXUqPcphOQ7RlTYYRyTebv8f4ZQmPA==
-  dependencies:
-    "@formkit/core" "0.17.4"
-    "@formkit/utils" "0.17.4"
-
-"@formkit/i18n@0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/i18n/-/i18n-0.17.4.tgz#a5c57c32b1d5636a467a5467c5d492e4e79da25a"
-  integrity sha512-TDsEFsK7/ot1Dy1FiTLrik3oyENWhLahI0SwqbgRrIMH9tQKMapQEW1vL95e2hGlq7C2QWAVan3W/6j68RtX8A==
-  dependencies:
-    "@formkit/core" "0.17.4"
-    "@formkit/utils" "0.17.4"
-    "@formkit/validation" "0.17.4"
-
-"@formkit/inputs@0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/inputs/-/inputs-0.17.4.tgz#1ab08f6edfc71fed24de1edd135bfc910d793b52"
-  integrity sha512-ilGPbEGEXyDbUZe5JM3hxoqls+7qNJAtAGyrV1LN99/OpSf31pTMtJdHIjv9q+UrovQ8+rwIDYNHrdMYQB5kkg==
-  dependencies:
-    "@formkit/core" "0.17.4"
-    "@formkit/utils" "0.17.4"
-
-"@formkit/observer@0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/observer/-/observer-0.17.4.tgz#fac0cece72fb606c719a45c85312d5554f24374d"
-  integrity sha512-KQ420Qr88RKIHjLBfxmW52kcl0qvIxrW0wk56zBk1sj5eTGvlLAUfayR6kSVPTbhcP14ymG2gkOQRz+7D76vcg==
-  dependencies:
-    "@formkit/core" "0.17.4"
-    "@formkit/utils" "0.17.4"
-
-"@formkit/rules@0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/rules/-/rules-0.17.4.tgz#1795f341033ebf7cee68d21b14b502422868fde6"
-  integrity sha512-QlegMGBKpwdJEl1ey2J+6OeAAEBQJtH9nZgey6YdTcGVUohRisk3zhnS4Vlu8pT7E/L1sauIEF4GyRhZEtY2qg==
-  dependencies:
-    "@formkit/core" "0.17.4"
-    "@formkit/utils" "0.17.4"
-    "@formkit/validation" "0.17.4"
-
-"@formkit/themes@0.17.4", "@formkit/themes@^0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/themes/-/themes-0.17.4.tgz#74b9a9146f10cab7dd369559e3732be4b8c207d5"
-  integrity sha512-VjVC/TD/lhRLYWP6ctRd+LmBN0+FWLKbcczo2vFl9nzzcmOSRz225pK7kJNN8Futrw+hv383xM97cwXTpOpnlg==
-  dependencies:
-    "@formkit/core" "0.17.4"
-
-"@formkit/utils@0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/utils/-/utils-0.17.4.tgz#3af8cd52c69e0b9a4ea2926e8bd0b2517b9ce953"
-  integrity sha512-5xt4gJFqoRFR+/MklUlSeH6aJAebmVK8Fk/Y5wAE136fnx9i52HrXfsuQ6TNYOPiTvDTvtM/SVtvRjSu3qDBzw==
-
-"@formkit/validation@0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/validation/-/validation-0.17.4.tgz#a50e62720f67f9f907d1e9ce1501de242417aea7"
-  integrity sha512-O2pnZkV0+IVaCmhd6W3RbNFKMdZLVbIKPgywSNngmCahxKmMCCgyd91WmmHnQNRPrZo6VOKW7ZfKUGAApYtQAQ==
-  dependencies:
-    "@formkit/core" "0.17.4"
-    "@formkit/observer" "0.17.4"
-    "@formkit/utils" "0.17.4"
-
-"@formkit/vue@^0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@formkit/vue/-/vue-0.17.4.tgz#035ee5bfff7a7544dad45a3b4ca75b8ae425fad2"
-  integrity sha512-1gG6I6kkVH6aVvpjaApC7gbU+yMRfja0V+I9h3h0ROCBaNmp5vwMjtLF60b9+IcVlkmIZd6VfacMqte84fB6Aw==
-  dependencies:
-    "@formkit/core" "0.17.4"
-    "@formkit/dev" "0.17.4"
-    "@formkit/i18n" "0.17.4"
-    "@formkit/inputs" "0.17.4"
-    "@formkit/observer" "0.17.4"
-    "@formkit/rules" "0.17.4"
-    "@formkit/themes" "0.17.4"
-    "@formkit/utils" "0.17.4"
-    "@formkit/validation" "0.17.4"
 
 "@fullcalendar/common@~5.11.5":
   version "5.11.5"
@@ -1492,18 +1402,6 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apexcharts-clevision@^3.28.5:
-  version "3.28.5"
-  resolved "https://registry.yarnpkg.com/apexcharts-clevision/-/apexcharts-clevision-3.28.5.tgz#83ef5e80120499dca9e54f9efd53b07f4492271f"
-  integrity sha512-FaxvmpCGxUyusUGzS1iAt3yL00UG5Bus73fhEhnK1QuH+expzz53f4lJFxwP1kY31vpR9WTzZx52CZzDEk4UOg==
-  dependencies:
-    svg.draggable.js "^2.2.2"
-    svg.easing.js "^2.0.0"
-    svg.filter.js "^2.0.2"
-    svg.pathmorphing.js "^0.1.3"
-    svg.resize.js "^1.4.3"
-    svg.select.js "^3.0.1"
-
 arg@^4.1.0:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.3.tgz#269fc7ad5b8e42cb63c896d5666017261c144089"
@@ -1590,14 +1488,6 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
-
-axios-mock-adapter@^1.21.2:
-  version "1.21.4"
-  resolved "https://registry.yarnpkg.com/axios-mock-adapter/-/axios-mock-adapter-1.21.4.tgz#ced09b54b245b338422e3af425ae529bfa26e051"
-  integrity sha512-ztnENm28ONAKeRXC/6SUW6pcsaXbThKq93MRDRAA47LYTzrGSDoO/DCr1NHz7jApEl95DrBoGPvZ0r9xtSbjqw==
-  dependencies:
-    fast-deep-equal "^3.1.3"
-    is-buffer "^2.0.5"
 
 axios@1.1.2:
   version "1.1.2"
@@ -1755,11 +1645,6 @@ character-reference-invalid@^1.0.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/character-reference-invalid/-/character-reference-invalid-1.1.4.tgz#083329cda0eae272ab3dbbf37e9a382c13af1560"
   integrity sha512-mKKUkUbhPpQlCOfIuZkvSEgktjPFIsZKRRbC6KWVEMvlzblj3i3asQv5ODsrwt0N3pHAEvjP8KTQPHkp0+6jOg==
-
-chart.js@^3.9.1:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.9.1.tgz#3abf2c775169c4c71217a107163ac708515924b8"
-  integrity sha512-Ro2JbLmvg83gXF5F4sniaQ+lTbSv18E+TIf2cOeiH1Iqd2PGFOtem+DUufMZsCJwFE7ywPOpfXFBwRTGq7dh6w==
 
 cheerio-select@^2.1.0:
   version "2.1.0"
@@ -3446,11 +3331,6 @@ is-boolean-object@^1.1.0:
     call-bind "^1.0.2"
     has-tostringtag "^1.0.0"
 
-is-buffer@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
-  integrity sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==
-
 is-builtin-module@^3.2.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-3.2.1.tgz#f03271717d8654cfcaf07ab0463faa3571581169"
@@ -3806,11 +3686,6 @@ locate-path@^6.0.0:
   integrity sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==
   dependencies:
     p-locate "^5.0.0"
-
-lodash-es@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
-  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.camelcase@^4.3.0:
   version "4.3.0"
@@ -5354,61 +5229,6 @@ svg-tags@^1.0.0:
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
   integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
-svg.draggable.js@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/svg.draggable.js/-/svg.draggable.js-2.2.2.tgz#c514a2f1405efb6f0263e7958f5b68fce50603ba"
-  integrity sha512-JzNHBc2fLQMzYCZ90KZHN2ohXL0BQJGQimK1kGk6AvSeibuKcIdDX9Kr0dT9+UJ5O8nYA0RB839Lhvk4CY4MZw==
-  dependencies:
-    svg.js "^2.0.1"
-
-svg.easing.js@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/svg.easing.js/-/svg.easing.js-2.0.0.tgz#8aa9946b0a8e27857a5c40a10eba4091e5691f12"
-  integrity sha512-//ctPdJMGy22YoYGV+3HEfHbm6/69LJUTAqI2/5qBvaNHZ9uUFVC82B0Pl299HzgH13rKrBgi4+XyXXyVWWthA==
-  dependencies:
-    svg.js ">=2.3.x"
-
-svg.filter.js@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/svg.filter.js/-/svg.filter.js-2.0.2.tgz#91008e151389dd9230779fcbe6e2c9a362d1c203"
-  integrity sha512-xkGBwU+dKBzqg5PtilaTb0EYPqPfJ9Q6saVldX+5vCRy31P6TlRCP3U9NxH3HEufkKkpNgdTLBJnmhDHeTqAkw==
-  dependencies:
-    svg.js "^2.2.5"
-
-svg.js@>=2.3.x, svg.js@^2.0.1, svg.js@^2.2.5, svg.js@^2.4.0, svg.js@^2.6.5:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/svg.js/-/svg.js-2.7.1.tgz#eb977ed4737001eab859949b4a398ee1bb79948d"
-  integrity sha512-ycbxpizEQktk3FYvn/8BH+6/EuWXg7ZpQREJvgacqn46gIddG24tNNe4Son6omdXCnSOaApnpZw6MPCBA1dODA==
-
-svg.pathmorphing.js@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/svg.pathmorphing.js/-/svg.pathmorphing.js-0.1.3.tgz#c25718a1cc7c36e852ecabc380e758ac09bb2b65"
-  integrity sha512-49HWI9X4XQR/JG1qXkSDV8xViuTLIWm/B/7YuQELV5KMOPtXjiwH4XPJvr/ghEDibmLQ9Oc22dpWpG0vUDDNww==
-  dependencies:
-    svg.js "^2.4.0"
-
-svg.resize.js@^1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/svg.resize.js/-/svg.resize.js-1.4.3.tgz#885abd248e0cd205b36b973c4b578b9a36f23332"
-  integrity sha512-9k5sXJuPKp+mVzXNvxz7U0uC9oVMQrrf7cFsETznzUDDm0x8+77dtZkWdMfRlmbkEEYvUn9btKuZ3n41oNA+uw==
-  dependencies:
-    svg.js "^2.6.5"
-    svg.select.js "^2.1.2"
-
-svg.select.js@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/svg.select.js/-/svg.select.js-2.1.2.tgz#e41ce13b1acff43a7441f9f8be87a2319c87be73"
-  integrity sha512-tH6ABEyJsAOVAhwcCjF8mw4crjXSI1aa7j2VQR8ZuJ37H2MBUbyeqYr5nEO7sSN3cy9AR9DUwNg0t/962HlDbQ==
-  dependencies:
-    svg.js "^2.2.5"
-
-svg.select.js@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/svg.select.js/-/svg.select.js-3.0.1.tgz#a4198e359f3825739226415f82176a90ea5cc917"
-  integrity sha512-h5IS/hKkuVCbKSieR9uQCj9w+zLHoPh+ce19bBYyqF53g6mnPB8sAtIbe1s9dh2S2fCmYX2xel1Ln3PJBbK4kw==
-  dependencies:
-    svg.js "^2.6.5"
-
 svgo@^2.7.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-2.8.0.tgz#4ff80cce6710dc2795f0c7c74101e6764cfccd24"
@@ -5711,15 +5531,6 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
-v-network-graph@^0.9.5:
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/v-network-graph/-/v-network-graph-0.9.5.tgz#451fd3d5080711d32ba1e864f13ed870a98b378a"
-  integrity sha512-jpXFBt/d0OlC1KqsRZjFrUGwsDLtcz/nG67eNQOfKqA0FZRXJnObhdCVX8rl0vuBRuTgwh5Oj5olSJicuzEVXQ==
-  dependencies:
-    "@dash14/svg-pan-zoom" "^3.6.9"
-    lodash-es "^4.17.21"
-    mitt "^3.0.0"
-
 v8-compile-cache-lib@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz#6336e8d71965cb3d35a1bbb7868445a7c05264bf"
@@ -5782,11 +5593,6 @@ vite@^3.2.4:
     rollup "^2.79.1"
   optionalDependencies:
     fsevents "~2.3.2"
-
-vue-chartjs@^4.1.1:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/vue-chartjs/-/vue-chartjs-4.1.2.tgz#f899ba14f3b80660f8d2c610a015341806dfc437"
-  integrity sha512-QSggYjeFv/L4jFSBQpX8NzrAvX0B+Ha6nDgxkTG8tEXxYOOTwKI4phRLe+B4f+REnkmg7hgPY24R0cixZJyXBg==
 
 vue-demi@*, vue-demi@>=0.14.5:
   version "0.14.5"
@@ -5851,11 +5657,6 @@ vue-tsc@^1.0.9:
     "@volar/vue-language-core" "1.6.5"
     "@volar/vue-typescript" "1.6.5"
     semver "^7.3.8"
-
-vue3-apexcharts@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/vue3-apexcharts/-/vue3-apexcharts-1.4.1.tgz#ea561308430a1c5213b7f17c44ba3c845f6c490d"
-  integrity sha512-96qP8JDqB9vwU7bkG5nVU+E0UGQn7yYQVqUUCLQMYWDuQyu2vE77H/UFZ1yI+hwzlSTBKT9BqnNG8JsFegB3eg==
 
 vue3-perfect-scrollbar@^1.6.0:
   version "1.6.1"

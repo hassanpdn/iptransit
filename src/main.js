@@ -1,22 +1,20 @@
 /* eslint-disable import/order */
-import '@/@iconify/icons-bundle'
-import App from '@/App.vue'
-import layoutsPlugin from '@/plugins/layouts'
-import vuetify from '@/plugins/vuetify'
-import i18n from '@/plugins/i18n'
-import '/formkit.config'
-import { loadFonts } from '@/plugins/webfontloader'
-import router from '@/router'
-import VNetworkGraph from "v-network-graph"
-import "v-network-graph/lib/style.css"
-import '@core/scss/template/index.scss'
-import '@styles/styles.scss'
+import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createPersistedState } from 'pinia-plugin-persistedstate'
-import { createApp } from 'vue'
+import { loadFonts } from '@/plugins/webfontloader'
+
+import App from '@/App.vue'
+import vuetify from '@/plugins/vuetify'
+import i18n from '@/plugins/i18n'
+import router from '@/router'
 import Vue3PersianDatetimePicker from 'vue3-persian-datetime-picker'
+import layoutsPlugin from '@/plugins/layouts'
 import mitt from 'mitt'
-import { plugin, defaultConfig } from '@formkit/vue'
+
+import '@/@iconify/icons-bundle'
+import '@core/scss/template/index.scss'
+import '@styles/styles.scss'
 
 
 loadFonts()
@@ -35,8 +33,6 @@ app.use(router)
 app.use(i18n)
 app.use(pinia)
 app.use(layoutsPlugin)
-app.use(plugin, defaultConfig)
-app.use(VNetworkGraph)
 app.use(Vue3PersianDatetimePicker, {
   name: 'DatePicker',
   props: {
