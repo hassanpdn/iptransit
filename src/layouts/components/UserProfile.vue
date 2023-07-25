@@ -5,8 +5,8 @@ import avatar from '@images/avatars/default.png'
 
 const authStore = useAuthStore()
 
-const userName = computed(() => authStore.user.name)
-const userRole = computed(() => authStore.user.role)
+const userName = computed(() => authStore?.user?.name)
+const userRole = computed(() => authStore?.user?.role)
 </script>
 
 <template>

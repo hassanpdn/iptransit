@@ -54,8 +54,17 @@
               </VCol>
 
               <!-- Create account -->
-              <VCol cols="12" class="text-center">
-                <span>🎉 One click to your personalized experience</span>
+              <VCol
+                cols="12"
+                class="text-center"
+              >
+                <span>New on our platform?</span>
+                <RouterLink
+                  class="text-primary ms-2"
+                  :to="{ name: 'register' }"
+                >
+                  Create an account
+                </RouterLink>
               </VCol>
             </VRow>
           </VForm>
@@ -90,8 +99,7 @@ const errors = ref({
 
 const form = ref({
   username: 'contoso',
-  password: 'contoso',
-  remember: false,
+  password: 'contoso'
 })
 
 const authStore = useAuthStore()

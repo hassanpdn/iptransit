@@ -9,7 +9,7 @@ import { AppContentLayoutNav, ContentWidth, FooterType, NavbarType } from '@layo
 
 export const { themeConfig, layoutConfig } = defineThemeConfig({
   app: {
-    title: 'IP Transit',
+    title: 'Global gateway',
 
     //     logo: h('div', { innerHTML: logo, style: 'line-height:0; color: rgb(var(--v-global-theme-primary))' }),
     logo: h('img', { src: logo,  style: 'line-height:0; max-width: 20px; color: rgb(var(--v-global-theme-primary))' }),

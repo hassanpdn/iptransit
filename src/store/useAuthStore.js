@@ -15,18 +15,6 @@ export const useAuthStore = defineStore({
     isLoggedIn(state) {
       return state.isAuthenticated
     },
-    isSuperAdmin(state) {
-      return state.user?.role === 'admin'
-    },
-    isVendor(state) {
-      return state.user?.role === 'vendor'
-    },
-    isStaff(state) {
-      return state.user?.role === 'staff'
-    },
-    isCustomer(state) {
-      return state.user?.role === 'customer'
-    },
   },
   actions: {
     showMessages({ text, color }) {
@@ -49,9 +37,9 @@ export const useAuthStore = defineStore({
         this.showMessages({ text: err, color: 'error' })
       })
     },
-    async login(email, password) {
+    async login(username, password) {
       try {
-        const response = await login(email, password)
+        const response = await login(username, password)
         if (response.status === 200) {
           const { token, user } = response.data.data
 

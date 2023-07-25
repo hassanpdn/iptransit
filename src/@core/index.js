@@ -26,7 +26,7 @@ export const defineThemeConfig = userConfig => {
   return {
     themeConfig: {
       app: {
-        title: 'IP Transit',
+        title: 'Global gateway',
         logo: userConfig.app.logo,
         contentWidth: ref(userConfig.app.contentWidth),
         contentLayoutNav: ref(userConfig.app.contentLayoutNav),
